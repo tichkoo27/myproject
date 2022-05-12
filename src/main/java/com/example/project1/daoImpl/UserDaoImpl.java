@@ -29,5 +29,7 @@ public class UserDaoImpl implements UserDao{
 		
 		return namedParameterJdbcTemplate.query(User_query+"where name like '%"+name+"%' ", new UserDetailsMapper());
 	}
+
+	
 	
 }

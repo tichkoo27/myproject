@@ -5,6 +5,7 @@ import java.sql.SQLException;
 
 import org.springframework.jdbc.core.RowMapper;
 
+import com.example.project1.entity.UserDetails;
 import com.example.project1.payLoad.UserDetailsType;
 
 public class UserDetailsMapper implements RowMapper<UserDetailsType>{
@@ -27,5 +28,23 @@ public class UserDetailsMapper implements RowMapper<UserDetailsType>{
 		return userDetailsType;
 		
 	}
+	
+//	public UserDetails userDetailsTypeToUserDetails(UserDetailsType userDetailsType) {
+//		
+//		
+//		UserDetails userDetails = new UserDetails();
+//		
+//		userDetails.setName(userDetailsType.getName());
+//		userDetails.setDob(userDetailsType.getDob());
+//		userDetails.setAddress(userDetailsType.getAddress());
+//		userDetails.setSalary(userDetailsType.getSalary());
+//		userDetails.setManagerId(userDetailsType.getManagerId());
+//		userDetails.setEmail(userDetailsType.getEmail());
+//		userDetails.setPhoneNumber(userDetailsType.getPhoneNumber());
+//		
+//		
+//		return userDetails;
+//		
+//	}
 	
 }

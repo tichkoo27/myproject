@@ -17,7 +17,7 @@ public class UserDetailsType {
 	private Long managerId;
 	private String email;
 	private Long phoneNumber;
-
+	
 	public String getName() {
 		return name;
 	}
